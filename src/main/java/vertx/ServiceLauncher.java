@@ -29,7 +29,7 @@ public class ServiceLauncher extends AbstractVerticle {
 	    
 	}
 
-	//required for GraalVM
+	//required for dev start
 	public static void main(String[] args) {
         Vertx.vertx().deployVerticle(new ServiceLauncher());
     }
