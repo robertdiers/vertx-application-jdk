@@ -6,7 +6,7 @@ REST application including Vert.x timers, Vert.x JDBC, Vert.x web client and Ver
 
 `mvn clean install`
 
-Please use JDK (11+) to start the server:
+Please use JDK (1.8+) to start the server:
 
 `cd target`
 
