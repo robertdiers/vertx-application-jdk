@@ -135,6 +135,26 @@
           </arguments>
         </configuration>
       </plugin>
+      <!-- build container using JIB -->
+      <plugin>
+        <groupId>com.google.cloud.tools</groupId>
+        <artifactId>jib-maven-plugin</artifactId>
+        <version>0.10.0</version>
+        <configuration>
+          <from>
+            <image>openjdk:8-jre-alpine</image>
+          </from>
+          <to>
+            <image>vertx-example</image>
+          </to>
+          <container>
+            <jvmFlags>
+              <jvmFlag>-Xms64m</jvmFlag>
+            </jvmFlags>
+            <mainClass>vertx.ServiceLauncher</mainClass>
+          </container>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
