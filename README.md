@@ -40,3 +40,8 @@ http://localhost:8080/test/webclient
 
 JDBC Database
 http://localhost:8080/test/database
+
+Docker build using:
+
+`mvn clean install jib:buildTar`
+
